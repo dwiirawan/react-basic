@@ -7,3 +7,11 @@ npx create-react-app react-basic
 cd my-app
 npm start
 ---
+
+## Menghapus File
+
+Hapus file dari repository menggunakan perintah `git rm`, diikuti dengan `git commit`, dan `git push`.
+
+```
+git rm <nama file>
+```
