@@ -1,0 +1,12 @@
+Membuat Aplikasi React
+npx create-react-app react-basic
+cd my-app
+npm start
+ukuran node_modules 143 MB
+
+Install Axios
+npm install axios
+
+Install Cors
+npm install cors
+
