@@ -6,7 +6,9 @@ ukuran node_modules 143 MB
 
 Install Axios
 npm install axios
+ukuran node_modules 141 MB
 
 Install Cors
+harus menggunakan administrator
 npm install cors
 
