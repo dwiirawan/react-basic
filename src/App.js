@@ -6,8 +6,8 @@ import './App.css';
 // import Biodata from './components/BiodataState';
 // import FormInput from './components/FormInput';
 // import Counter from './components/Counter';
-// import Blog from './components/AksesAPI';
-import DataLocal from './components/LocalAPI';
+import Blog from './components/AksesAPI';
+// import DataLocal from './components/LocalAPI';
 
 
 // function App() {
@@ -18,8 +18,8 @@ class App extends Component {
         {/* <Kom1 /> */}
         {/* <Biodata nama="Dwi Irawan" alamat="Kebumen" hobi={<Hobi />}/> */}
         {/* <FormInput /> */}
-        {/* <Blog /> */}
-        <DataLocal />
+        <Blog />
+        {/* <DataLocal /> */}
         {/* <Counter /> */}
         {/* <Kom2 /> */}
       </div>
