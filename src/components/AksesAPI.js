@@ -10,9 +10,8 @@ class AksesAPI extends Component{
 
     getData = () => {
         axios
-            .get('http://jsonplaceholder.typicode.com/posts')
+            .get('https://jsonplaceholder.typicode.com/posts/')
             .then(result => {
-                console.log(result);
                 this.setState({
                     posts: result.data
                 })
@@ -22,23 +21,27 @@ class AksesAPI extends Component{
             })
     }
 
-    componentDidMonth() {
+    componentDidMount() {
         this.getData();
     }
 
     render() {
-        return(
-            // this.state.posts.map(post => {
-            //     return <Post 
-            //         key={post.id}
-            //         title={post.title}
-            //         body={post.body}
-            //     />;
-            // })
-            <div>
-                {console.log(this.state.posts)}
-                <Post title="Judul" body="Isi Artikel"/>
-            </div>
+        // return(
+        return this.state.posts.length > 0 ? (
+            this.state.posts.map(post => {
+                return <Post 
+                    key={post.id}
+                    title={post.title}
+                    body={post.body}
+                />;
+            })
+            ) : (
+                <h1>Loading...</h1>
+
+            // <div>
+            //     {console.log(this.state.posts)}
+            //     <Post title="Judul" body="Isi Artikel"/>
+            // </div>
         );
     }
 }
